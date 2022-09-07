@@ -7,6 +7,7 @@ eval $(ssh-agent -s) &&
 ssh-add <(echo "${INPUT_KEY}") && 
 echo "🔐 Added ssh key";
 
+
 PRE_UPLOAD=${INPUT_PRE_UPLOAD}
 if [ ! -z "$PRE_UPLOAD" ]; then
     { 
